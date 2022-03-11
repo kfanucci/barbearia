@@ -10,7 +10,7 @@ html {
 }
 
 
-.slider2 {
+header {
 	background: url(imagens/slider2.jpg);
 	height: 100vh;
 	width: 100%;
@@ -38,6 +38,7 @@ html {
 	opacity: 0.8;
 	transition: 1s opacity;
 }
+
 
 nav {
 	position: fixed; /*  */
@@ -210,7 +211,7 @@ form label, form legend {
 }
 
 table {
-	margin: 20px 0 40px;
+	margin: 20px 2em 40px 2em;
 	padding: 10px;
 }
 
@@ -225,6 +226,9 @@ td{
 	padding: 8px 15px;
 }
 
+select {
+	margin: 2em;
+}
 
 /* ----------------------- RODAPE ----------------------- */ 
 
@@ -244,7 +248,73 @@ footer {
 /* dispositivos moveis */
 
 @media screen and (max-width: 480px) {
-
-	header{
+	.caixa, #sobre, #produtos, #mapa, #contato, .menuoption, main {
 		width: auto;
+	}
+
+
+
+	header {
+		height: 100%;
+		background-size: 100%;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.menuoption {
+
+		text-align: center;
+		background: #000000;
+
+	}
+
+	nav {
+		position: sticky;
+		display: block;
+		font-size: x-small;
+		text-align: center;
+		width: auto;
+
+	}
+
+	.menubar {
+		position: relative;
+	}
+
+	.logo1 {
+		position: sticky;
+	}
+
+	.products li {
+		display: block;
+		width: auto;
+	}
+
+	#sobre p{
+	display: block;
+	width: auto;
+	margin: 1em 1em;
+	}
+
+	.beneficiosjpg{
+	vertical-align: bottom;
+	width: 100%;
+}
+	
+	h3 {
+		text-align: center;
+	}
+
+	#sobre, #produtos, #contato, #mapa{
+	padding: 2em 0;
+	}	
+
+	table, h3 {
+		margin: auto;
+	}
+
+	.enviar {
+		margin: 0 0 0 2em;
 	}
